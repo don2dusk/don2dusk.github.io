@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[data-theme = "Light"] {
+    --primary: white;
+    --text: #000;
+    --heading: #ccc;
+    --icon-size: 1.8rem;
+    --invert: none;
+    --hover-color: #ccc;
+    --button-bg: #000;
+    --button-fg: white;
+}
+
+[data-theme = "Dark"] {
+    --primary: #141414;
+    --text: #ccc;
+    --heading: #888;
+    --icon-size: 1.5rem;
+    --invert: invert(85%);
+    --hover-color: #888;
+    --button-bg: white;
+    --button-fg: black;
+}
+
+
+
+body {
+    font-size: 100%;
+    font-family: 'Helvetica Neue';
+    background-color: var(--primary);
+}
+
+
+.d2d {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.3rem;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+    position: fixed;
+    z-index: 9999999;
+    align-items: center;
+    background-color: var(--primary);
+}
+
+header .d2d, header #head, header .button-container {
+    width: 33.3vw;
+}
+
+header button {
+    float: right;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 0.8rem;
+    height: 100%;
+}
+
+#head * {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#head a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 300;
+    padding: 10px;
+}
+
+#head a:hover {
+    background-color: var(--hover-color);
+    padding: 10px 20px;
+    transition: ease 0.25s;
+    border-radius: 5px;
+    color: white;
+}
+
+.vl {
+    border: 1px solid #ccc;
+    height: 100%;
+  }
+
+  #toggle {
+      height: 30px;
+      width: 30px;
+      border: none;
+      -webkit-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      background: none;
+      font-size: var(--icon-size);
+  }
+
+  #toggle p {
+    color: var(--text);
+  }
+
+#home {
+    height: 140vh;
+}
+
+#projects {
+    height: 120vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* #projects, #resume, #contact {
+    padding: 5% 0vw;
+} */
+
+#head-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#hello {
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+#info {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: var(--text);
+}
+
+#br {
+    height: 30px;
+}
+
+#don2dusk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#me img {
+    height: 65vh;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 48em;
+    padding: 20px;
+    border: 2px solid #ccc;
+}
+
+#pre div {
+    width: 250px;
+    padding-right: 50px;
+}
+
+#post div {
+    width: 235px;
+    padding-left: 35px;
+}
+
+#heading1, #body1 {
+    margin: 20px 0px;
+}
+
+#heading1 {
+    font-size: 0.6rem;
+    color: var(--heading);
+}
+
+#body1 {
+    font-size: 0.8rem;
+    color: var(--text);
+    font-weight: 300;
+}
+#abr {
+    height: 15px;
+}
+.br {
+    height: 10%;
+}
+
+.langs {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#heading {
+    color: var(--text);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#rr {
+    height: 50px;
+    color: var(--text);
+    appearance: none;
+    padding: 5px;
+    -webkit-appearance: none;
+    box-shadow: none;
+    background: none;
+    border: 1px double var(--text);
+    outline-offset: 2px;
+    outline: 1px solid var(--text);
+    background:-webkit-gradient(linear, left top, right top, color-stop(50%, var(--primary)), color-stop(50%, var(--button-bg)));
+    background-size:200% 100%;
+    background-position:0 0;
+    transition: color 0.5s ease-in-out, background-position 0.4s ease-in-out;
+}
+
+#rr:hover {
+    color: var(--button-fg);
+    background-position:-100% 0;
+}
+
+hr {
+    margin: 20px;
+}
+
+#projects-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+}
+
+#projects p {
+    text-align: center;
+    width: 60%;
+    color: var(--text);
+    align-items: center;
+    display: flex;
+}
+
+#project-cards {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+}
+
+#p-line1 {
+    display: inline-flex;
+}
+
+#p-line2 {
+    display: inline-flex;
+}
+
+#v-breaker {
+    width: 20px;
+}
+
+#p-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    box-shadow: 1px 10px 50px rgb(40, 40, 40);
+}
+
+#p-card img{
+    width: 100%;
+    object-fit: cover;
+    height: 60%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#p-card h1 {
+    font-size: 1rem;
+    padding: 0px 5px;
+}
+
+#p-card p {
+    font-size: 0.8rem;
+    padding: 0px 5px;
+    width: 100%;
+}
+
+#p-card div {
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 0.6rem;
+    bottom: 0;
+    right: 0;
+}
+
+#gallery-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+#my-gallery {
+    display: flex;
+    padding: 0vh 23vw;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-gallery div {
+    height: 250px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#my-gallery div img {
+    object-fit: cover;
+    height: 250px;
+    width: 200px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, transform 0.4s ease-in-out;
+}
+
+#my-gallery div img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    color: var(--text);
+    height: 8vh;
+    width: 100vw;
+    padding: 0px 20px;
+}
+
+#link {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#link a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+#link, #cr, #icons {
+    width: 33.3%;
+    font-size: 0.8rem;
+}
+
+#icons {
+    text-align: right;
+}
+
+#icons img {
+    width: 40px;
+    filter: var(--invert);
+    color: var(--text);
+    padding: 0px 10px;
+}
+
