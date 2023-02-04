@@ -94,6 +94,10 @@ header button {
     color: white;
 }
 
+.yoe {
+    font-size: 2rem !important;
+}
+
 .vl {
     border: 1px solid #ccc;
     height: 100%;
@@ -183,7 +187,7 @@ section {
 }
 
 #heading1 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: var(--heading);
 }
 
@@ -199,11 +203,8 @@ section {
     height: 10%;
 }
 
-.langs {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    font-weight: 600;
+#langs {
+    color: var(--text);
 }
 
 #heading {
@@ -238,48 +239,6 @@ hr {
     margin: 20px;
 }
 
-#projects-body {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#projects p {
-    text-align: center;
-    width: 60%;
-    color: var(--text);
-    align-items: center;
-    display: flex;
-}
-
-#my-projects {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    align-items: center;
-    padding: 0;
-}
-
-
-#my-projects div {
-    height: 300px;
-    width: 50px;
-    margin: 10px;
-    border-radius: 48em;
-    align-items: center;
-    overflow: hidden;
-    border:1px solid #000;
-}
-
-
-#my-projects div img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
 #gallery-body {
     height: 100%;
     width: 100%;
@@ -287,6 +246,10 @@ hr {
     flex-direction: column;
     align-content: center;
     text-align: center;
+}
+
+#gallery-body p {
+    color: var(--text);
 }
 
 #my-gallery {
