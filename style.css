@@ -115,11 +115,7 @@ header button {
   }
 
 #home {
-    height: 140vh;
-}
-
-#projects {
-    height: 120vh;
+    height: 130vh;
 }
 
 section {
@@ -243,10 +239,11 @@ hr {
 }
 
 #projects-body {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
 }
 
 #projects p {
@@ -257,59 +254,30 @@ hr {
     display: flex;
 }
 
-#project-cards {
+#my-projects {
     display: flex;
-    flex-direction: column;
-    width: 70%;
+    width: 50%;
     height: 100%;
     align-items: center;
+    padding: 0;
 }
 
-#p-line1 {
-    display: inline-flex;
-}
 
-#p-line2 {
-    display: inline-flex;
-}
-
-#v-breaker {
-    width: 20px;
-}
-
-#p-card {
-    position: relative;
-    width: 200px;
+#my-projects div {
     height: 300px;
-    border-radius: 20px;
-    background-color: var(--primary);
-    box-shadow: 1px 10px 50px rgb(40, 40, 40);
+    width: 50px;
+    margin: 10px;
+    border-radius: 48em;
+    align-items: center;
+    overflow: hidden;
+    border:1px solid #000;
 }
 
-#p-card img{
-    width: 100%;
+
+#my-projects div img {
     object-fit: cover;
-    height: 60%;
-    border-radius: 20px 20px 0px 0px;
-}
-
-#p-card h1 {
-    font-size: 1rem;
-    padding: 0px 5px;
-}
-
-#p-card p {
-    font-size: 0.8rem;
-    padding: 0px 5px;
+    height: 100%;
     width: 100%;
-}
-
-#p-card div {
-    position: absolute;
-    padding: 5px 10px;
-    font-size: 0.6rem;
-    bottom: 0;
-    right: 0;
 }
 
 #gallery-body {
@@ -332,8 +300,8 @@ hr {
 }
 
 #my-gallery div {
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -341,8 +309,8 @@ hr {
 
 #my-gallery div img {
     object-fit: cover;
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out, transform 0.4s ease-in-out;
 }
